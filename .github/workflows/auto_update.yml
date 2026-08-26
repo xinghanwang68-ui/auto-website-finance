@@ -1,0 +1,57 @@
+name: Daily Web Update
+
+on:
+  schedule:
+    - cron: '0 23 * * *'
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install google-genai
+
+    # 【新增 Debug 步驟】：執行前先列印 generate.py 的原始碼與行號，確保捕捉真實檔態
+    - name: Debug Print Code
+      run: cat -n generate.py
+
+    - name: Run script
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        python generate.py
+
+    # 【核心修正 1】：使用 git add -A，確保「新增」與「刪除舊 HTML」都能被版控紀錄
+    - name: Commit generated files
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add -A
+        git diff --staged --quiet || git commit -m "Update daily content: $(date +'%Y-%m-%d')"
+        git push
+
+    # 【核心修正 2】：打包並發布至 GitHub Pages (請確保 Settings -> Pages -> Source 設定為 GitHub Actions)
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./ 
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
