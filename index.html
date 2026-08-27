@@ -3,31 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 每日科技情報站</title>
+    <title>美股每日動態情報站</title>
     <style>
-        body { font-family: 'PingFang TC', sans-serif; background-color: #f4f7f6; color: #333; padding: 40px 20px; }
-        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 15px 0; }
-        .date-link { display: block; padding: 15px; background: #ecf0f1; color: #2c3e50; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.2s; }
-        .date-link:hover { background: #3498db; color: white; transform: translateX(5px); }
-        .footer { margin-top: 50px; font-size: 0.85em; color: #7f8c8d; text-align: center; }
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 0.95em;
+            margin-bottom: 25px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        .date-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            background: #0f172a;
+            color: var(--text-main);
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 500;
+            border: 1px solid var(--border);
+            transition: all 0.2s ease;
+        }
+        .date-link:hover {
+            background: #1e293b;
+            border-color: var(--accent);
+            transform: translateX(6px);
+            color: var(--accent);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.85em;
+            color: var(--text-muted);
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🤖 AI 每日科技情報站</h1>
-        <p style="color: #95a5a6;">本站僅保留最近 5 日內的動態內容以供追蹤：</p>
+        <h1>📊 美股每日動態情報站</h1>
+        <p class="subtitle">追蹤美股強弱勢股走勢與市場關鍵大事（僅保留最近 5 日紀錄）：</p>
         <ul>
-            <li><a class="date-link" href="2026-08-25.html">📌 瀏覽 2026-08-25 的科技情報</a></li>
-            <li><a class="date-link" href="2026-08-24.html">📌 瀏覽 2026-08-24 的科技情報</a></li>
-            <li><a class="date-link" href="2026-08-23.html">📌 瀏覽 2026-08-23 的科技情報</a></li>
-            <li><a class="date-link" href="2026-08-22.html">📌 瀏覽 2026-08-22 的科技情報</a></li>
-            <li><a class="date-link" href="2026-08-21.html">📌 瀏覽 2026-08-21 的科技情報</a></li>
+            <li><a class="date-link" href="2026-08-27.html"><span>📈 美股盤後動態彙整</span> <span>2026-08-27 ➔</span></a></li>
+            <li><a class="date-link" href="2026-08-25.html"><span>📈 美股盤後動態彙整</span> <span>2026-08-25 ➔</span></a></li>
+            <li><a class="date-link" href="2026-08-24.html"><span>📈 美股盤後動態彙整</span> <span>2026-08-24 ➔</span></a></li>
+            <li><a class="date-link" href="2026-08-23.html"><span>📈 美股盤後動態彙整</span> <span>2026-08-23 ➔</span></a></li>
+            <li><a class="date-link" href="2026-08-22.html"><span>📈 美股盤後動態彙整</span> <span>2026-08-22 ➔</span></a></li>
         </ul>
         <div class="footer">
-            本網頁由 Python + GitHub Actions + Google New GenAI API 自動化生成
+            本站由 Python + GitHub Actions + Google Gemini API 自動化生成
         </div>
     </div>
 </body>
