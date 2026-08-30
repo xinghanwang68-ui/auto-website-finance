@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-08-30</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-08-30</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>SMCI</strong> Super Micro Computer</span><span class="badge-up">+12.55%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">受惠於AI伺服器需求持續強勁，分析師預期其未來營收將保持高速增長。</p>
+            <li class="stock-item"><span><strong>ARM</strong> Arm Holdings</span><span class="badge-up">+9.80%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">市場對其AI晶片設計核心地位的信心增強，技術升級與新應用前景廣闊。</p>
+            <li class="stock-item"><span><strong>MRNA</strong> Moderna</span><span class="badge-up">+7.21%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">宣布其RSV疫苗後期試驗數據積極，推動股價跳漲。</p>
+            <li class="stock-item"><span><strong>PLTR</strong> Palantir Technologies</span><span class="badge-up">+6.18%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">獲得新的政府部門合約，顯示其AI數據分析平台業務持續擴張。</p>
+            <li class="stock-item"><span><strong>RIVN</strong> Rivian Automotive</span><span class="badge-up">+5.92%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">傳出新的成本削減計畫與產能優化進展，緩解市場對其現金流的擔憂。</p>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>TSLA</strong> Tesla</span><span class="badge-down">-4.10%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">中國市場競爭加劇，以及傳聞全球裁員可能影響生產效率。</p>
+            <li class="stock-item"><span><strong>NVDA</strong> Nvidia</span><span class="badge-down">-3.22%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">經歷前期大幅上漲後，部分投資者選擇獲利了結，市場出現技術性回調。</p>
+            <li class="stock-item"><span><strong>TGT</strong> Target</span><span class="badge-down">-2.88%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">零售部門銷售增長放緩，加上對消費者支出前景的擔憂，導致股價承壓。</p>
+            <li class="stock-item"><span><strong>BBY</strong> Best Buy</span><span class="badge-down">-2.55%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">電子消費品需求疲軟，且受到分析師下調評級影響。</p>
+            <li class="stock-item"><span><strong>VZ</strong> Verizon Communications</span><span class="badge-down">-2.01%</span></li>
+            <p style="font-size: 0.9em; color: #555; margin-top: 2px;">市場對其無線業務競爭加劇及債務負擔表示擔憂，股價遭到拋售。</p>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：聯準會會議紀要偏鴿，但降息路徑仍崎嶇</strong>
+        <p>最新出爐的聯準會（Fed）上次聯邦公開市場委員會（FOMC）會議紀要顯示，雖然多數官員認同通膨風險已趨於平衡，但對於何時開始降息仍持謹慎態度，強調需「更多證據」證明通膨將持續向2%目標回落。此紀要讓市場對短期內大幅降息的預期有所降溫，尤其是對於夏季降息的樂觀情緒受到抑制，導致公債殖利率短暫反彈，並對部分高成長股形成壓力。然而，紀要中也透露出官員對經濟軟著陸的信心，暗示在適當時機仍會採取行動，為市場帶來一絲鴿派希望。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：謹慎樂觀下的分化行情</strong>
+        <p>在聯準會會議紀要發布後，市場呈現出「謹慎樂觀」下的板塊分化行情。科技股中，受益於AI趨勢的半導體與軟體板塊仍展現韌性，資金持續追逐具備明確成長動能的龍頭股，如AI伺服器供應商與晶片設計公司。然而，缺乏強勁催化劑的科技股則面臨獲利了結壓力。另一方面，金融板塊因市場預期利率可能「更高更久」而獲得支撐，表現相對穩健。公用事業、必需性消費品等防禦性板塊在不確定性上升之際，也吸引了部分避險資金流入。整體而言，美股大盤在大型科技股漲跌互見、總經數據偏向審慎的背景下，呈現震盪格局。投資者正密切關注接下來的通膨數據與企業財報，以尋找新的市場方向。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
