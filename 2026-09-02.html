@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-09-02</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-09-02</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>NVDA</strong> 輝達</span><span class="badge-up">+3.85%</span><p>受惠於AI晶片強勁需求與分析師普遍上調目標價。</p></li>
+            <li class="stock-item"><span><strong>SMCI</strong> 美超微電腦</span><span class="badge-up">+5.10%</span><p>搭上AI伺服器熱潮，市場看好其訂單能見度。</p></li>
+            <li class="stock-item"><span><strong>AMD</strong> 超微</span><span class="badge-up">+2.90%</span><p>推出新一代AI處理器，挑戰市場龍頭地位。</p></li>
+            <li class="stock-item"><span><strong>ARM</strong> 安謀</span><span class="badge-up">+4.25%</span><p>受AI設計授權需求增長激勵，股價持續走強。</p></li>
+            <li class="stock-item"><span><strong>MRNA</strong> Moderna</span><span class="badge-up">+6.50%</span><p>傳聞其新型流感疫苗後期試驗數據表現良好，提振市場信心。</p></li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>TSLA</strong> 特斯拉</span><span class="badge-down">-2.75%</span><p>歐洲對中國電動車加徵關稅，引發對其全球市場策略的擔憂。</p></li>
+            <li class="stock-item"><span><strong>CAT</strong> Caterpillar</span><span class="badge-down">-1.90%</span><p>全球製造業PMI數據略顯疲軟，影響重型機械設備需求前景。</p></li>
+            <li class="stock-item"><span><strong>LULU</strong> Lululemon Athletica</span><span class="badge-down">-3.15%</span><p>零售銷售數據不如預期，市場對消費支出謹慎。</p></li>
+            <li class="stock-item"><span><strong>BA</strong> 波音</span><span class="badge-down">-2.20%</span><p>飛機交付量持續面臨挑戰，生產問題仍困擾公司。</p></li>
+            <li class="stock-item"><span><strong>FCX</strong> Freeport-McMoRan</span><span class="badge-down">-3.50%</span><p>美元走強且全球大宗商品需求略有降溫，導致銅價承壓。</p></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：美國零售銷售數據意外疲軟</strong>
+        <p>最新公佈的美國5月零售銷售數據環比僅增長0.1%，遠低於市場預期的0.3%，且4月數據被向下修正。這項數據顯示美國消費者支出出現明顯放緩跡象，儘管通膨壓力有所緩解，但高利率環境和累積的物價上漲正逐步侵蝕消費者的購買力。數據出爐後，市場對聯準會降息的預期略有升溫，但同時也引發了對經濟增長前景的擔憂。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：科技股獨領風騷，大盤走勢分化</strong>
+        <p>在零售銷售數據疲軟的背景下，市場對經濟軟著陸的擔憂加劇。然而，受益於人工智慧（AI）浪潮的科技巨頭表現依舊強勁，特別是晶片相關類股在漲幅榜上獨佔鰲頭，顯示資金仍集中於具備明確成長故事和護城河的科技龍頭。與此同時，對經濟敏感的週期性板塊，如工業和非必需消費品則面臨壓力。公用事業和醫療保健等防禦性板塊表現相對穩健。整體而言，大盤呈現結構性行情，即由少數科技巨頭引領指數上漲，而更廣泛的市場則因經濟數據不確定性而走勢分化。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
