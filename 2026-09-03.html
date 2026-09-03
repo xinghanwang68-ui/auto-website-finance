@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-09-03</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-09-03</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>NVDA</strong> NVIDIA</span><span class="badge-up">+3.82%</span><br><span>受惠於AI晶片需求持續旺盛，分析師上調目標價。</span></li>
+            <li class="stock-item"><span><strong>SMCI</strong> Super Micro Computer</span><span class="badge-up">+5.11%</span><br><span>AI伺服器訂單強勁，市場看好其在AI基礎設施的領導地位。</span></li>
+            <li class="stock-item"><span><strong>NFLX</strong> Netflix</span><span class="badge-up">+3.55%</span><br><span>訂閱用戶增長超預期，新廣告策略奏效，提振投資者信心。</span></li>
+            <li class="stock-item"><span><strong>CRM</strong> Salesforce</span><span class="badge-up">+2.98%</span><br><span>雲端軟體需求穩健，AI整合進度獲肯定，股價穩步上揚。</span></li>
+            <li class="stock-item"><span><strong>RUN</strong> Sunrun</span><span class="badge-up">+6.50%</span><br><span>再生能源政策利好預期與空頭回補，推動太陽能股價反彈。</span></li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>BA</strong> Boeing</span><span class="badge-down">-5.83%</span><br><span>生產品質問題持續，聯邦航空管理局（FAA）調查進度緩慢，市場擔憂。</span></li>
+            <li class="stock-item"><span><strong>TSLA</strong> Tesla</span><span class="badge-down">-4.21%</span><br><span>電動車市場競爭激烈，最新銷售數據未達預期，價格戰壓力仍存。</span></li>
+            <li class="stock-item"><span><strong>SBUX</strong> Starbucks</span><span class="badge-down">-2.54%</span><br><span>下調營收指引，中國市場復甦不如預期，引發獲利擔憂。</span></li>
+            <li class="stock-item"><span><strong>PINS</strong> Pinterest</span><span class="badge-down">-4.50%</span><br><span>廣告收入增長放緩，且面臨來自其他社群媒體平台的競爭壓力。</span></li>
+            <li class="stock-item"><span><strong>AMD</strong> Advanced Micro Devices</span><span class="badge-down">-3.12%</span><br><span>儘管受AI題材支持，但市場對其AI晶片競爭力仍有疑慮，引發獲利了結。</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 聯準會官員鷹派發言與通膨數據引發市場擔憂：</strong>
+        <p>多位聯準會（Fed）官員發表鷹派言論，強調儘管通膨有所緩解，但仍有壓力，暗示降息時程可能進一步延後。同時，近期公布的關鍵通膨數據（如個人消費支出PCE）顯示核心通膨仍然頑固，市場對於6月或7月降息的預期進一步降溫，十年期美債殖利率因此走高，對成長型股票構成壓力。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動：AI概念股韌性強勁，部分工業與消費板塊承壓：</strong>
+        <p>在總體經濟不確定性增加的背景下，市場資金呈現明顯的板塊輪動。AI相關晶片股如NVIDIA及AI伺服器供應商Super Micro Computer等，因其強勁的產業前景和企業盈利預期，持續吸引資金流入，展現較強韌性。相反，受生產問題與監管壓力影響的航空製造商（如Boeing），以及受消費需求放緩與競爭加劇影響的電動車和部分消費性非必需品板塊則表現疲軟，顯示投資者風險偏好分化。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
