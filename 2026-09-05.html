@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-09-05</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-09-05</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>MRNA</strong> Moderna Inc.</span><span class="badge-up">+6.15%</span><br><span>宣布新流感疫苗臨床試驗數據積極，推動股價上揚。</span></li>
+            <li class="stock-item"><span><strong>UPST</strong> Upstart Holdings</span><span class="badge-up">+7.20%</span><br><span>受惠於市場對借貸利率預期放緩，AI借貸平台受關注。</span></li>
+            <li class="stock-item"><span><strong>SMCI</strong> Super Micro Computer</span><span class="badge-up">+4.80%</span><br><span>市場持續追捧AI伺服器供應商，訂單展望樂觀。</span></li>
+            <li class="stock-item"><span><strong>NVDA</strong> NVIDIA Corp.</span><span class="badge-up">+3.50%</span><br><span>AI晶片需求續旺，分析師普遍上調目標價。</span></li>
+            <li class="stock-item"><span><strong>PLTR</strong> Palantir Technologies</span><span class="badge-up">+3.90%</span><br><span>獲新增政府大型合約，數據分析服務前景看好。</span></li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>LULU</strong> Lululemon Athletica</span><span class="badge-down">-5.10%</span><br><span>最新財測不及市場預期，引發投資者對競爭壓力的擔憂。</span></li>
+            <li class="stock-item"><span><strong>FDX</strong> FedEx Corp.</span><span class="badge-down">-4.20%</span><br><span>全球貨運需求疲軟，公司下調全年獲利預期。</span></li>
+            <li class="stock-item"><span><strong>TSLA</strong> Tesla Inc.</span><span class="badge-down">-3.45%</span><br><span>電動車市場競爭加劇，中國交付數據未達預期。</span></li>
+            <li class="stock-item"><span><strong>ZM</strong> Zoom Video Communications</span><span class="badge-down">-3.10%</span><br><span>遠距辦公趨勢穩定，但增長動能受限，面臨競爭挑戰。</span></li>
+            <li class="stock-item"><span><strong>KO</strong> Coca-Cola Co.</span><span class="badge-down">-2.80%</span><br><span>盤中公布財報，營收增長略微放緩引發市場擔憂。</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：美國生產者物價指數 (PPI) 報告與聯準會鷹派言論</strong>
+        <p>美國勞工部公布最新的生產者物價指數 (PPI)，數據顯示核心PPI年增率高於市場預期，暗示通膨壓力可能持續存在。隨後，多位聯準會 (Fed) 官員發表鷹派言論，重申在通膨降至2%目標前，不應急於降息。此消息讓市場對聯準會今年降息的次數與時機預期再次出現波動，壓抑了風險資產的表現。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：科技股續強，利率敏感型板塊承壓</strong>
+        <p>儘管整體市場受到通膨和利率前景不明朗的影響，科技股在人工智慧 (AI) 題材的持續帶動下，表現仍相對強勁，尤其是AI晶片與相關基礎設施供應商。然而，對於利率敏感的成長股，以及部分防禦型或高股息板塊如公用事業和必需消費品，則在利率預期升溫的環境下承壓。整體而言，市場情緒呈現「喜憂參半」的格局，投資者在追逐成長潛力的同時，也密切關注宏觀經濟數據對貨幣政策的潛在影響。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
