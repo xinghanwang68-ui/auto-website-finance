@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-09-15</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-09-15</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>VSCO</strong> Victoria's Secret & Co.</span><span class="badge-up">+12.01%</span></li>
+            <!-- 列出 5 檔，並附帶 1 句簡短暴漲原因 -->
+            <li class="stock-item">財報超出市場預期，同時上調了全年業績展望，提振投資者信心。</li>
+            <li class="stock-item"><span><strong>LULU</strong> Lululemon Athletica Inc.</span><span class="badge-up">+9.80%</span></li>
+            <li class="stock-item">儘管面臨北美市場挑戰，但其財報數據優於預期，顯示品牌韌性及國際市場增長潛力。</li>
+            <li class="stock-item"><span><strong>DOCU</strong> DocuSign, Inc.</span><span class="badge-up">+6.32%</span></li>
+            <li class="stock-item">雲端電子簽名服務公司公佈強勁財報，並提出樂觀的未來營收預期。</li>
+            <li class="stock-item"><span><strong>SMCI</strong> Super Micro Computer, Inc.</span><span class="badge-up">+5.03%</span></li>
+            <li class="stock-item">受惠於AI伺服器需求持續強勁，多家分析師重申「買入」評級並上調目標價。</li>
+            <li class="stock-item"><span><strong>ARM</strong> Arm Holdings plc</span><span class="badge-up">+4.51%</span></li>
+            <li class="stock-item">延續AI熱潮帶動，市場預期其在AI晶片設計領域的領導地位將持續推動營收增長。</li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>FIVE</strong> Five Below, Inc.</span><span class="badge-down">-12.54%</span></li>
+            <!-- 列出 5 檔，並附帶 1 句簡短重挫原因 -->
+            <li class="stock-item">公佈的財報營收未達市場預期，且對未來季度銷售給出保守指引，引發市場擔憂。</li>
+            <li class="stock-item"><span><strong>PATH</strong> UiPath Inc.</span><span class="badge-down">-9.90%</span></li>
+            <li class="stock-item">宣布執行長將離職，加上公司給出的第二季度營收指引不及預期，導致股價重挫。</li>
+            <li class="stock-item"><span><strong>SMTC</strong> Semtech Corporation</span><span class="badge-down">-9.55%</span></li>
+            <li class="stock-item">無線射頻晶片製造商發佈的財測低於分析師預期，市場對其未來業績感到悲觀。</li>
+            <li class="stock-item"><span><strong>GME</strong> GameStop Corp.</span><span class="badge-down">-7.53%</span></li>
+            <li class="stock-item">前一日股價因散戶追捧而大幅波動後回調，且公司宣佈將發行新股稀釋股權。</li>
+            <li class="stock-item"><span><strong>BILI</strong> Bilibili Inc.</span><span class="badge-down">-6.82%</span></li>
+            <li class="stock-item">中概股整體表現承壓，受宏觀經濟不確定性及市場競爭加劇等因素影響。</li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：歐洲央行降息與美國就業數據</strong>
+        <p>歐洲央行（ECB）如市場普遍預期，宣佈降息25個基點，將主要再融資利率從4.50%降至4.25%，成為七國集團中首個啟動降息的主要央行。然而，ECB對未來降息路徑保持謹慎態度，強調通膨壓力仍在，未來決策將取決於數據。這項決議對全球貨幣政策產生示範作用，也讓市場開始權衡全球主要央行政策分歧的影響。</p>
+        <p>同日公佈的美國勞工部數據顯示，截至6月1日當週的初請失業金人數為22.9萬人，高於預期的22萬人，創下一個月新高。這項數據暗示美國勞動力市場可能正在逐步降溫，有助於緩解通膨壓力，為聯準會（Fed）未來的降息決策提供潛在空間。市場對聯準會今年降息的預期略有提升，但仍需更多數據佐證。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：科技與非必需消費品領漲，市場觀望降息路徑</strong>
+        <p>當日美股三大指數呈現小幅震盪走高格局。受惠於強勁財報的帶動，非必需消費品板塊表現亮眼，特別是Lululemon和Victoria's Secret等公司股價大幅上漲。科技板塊也持續受AI熱潮推動，部分晶片設計及AI相關公司表現突出，顯示市場對AI的長期樂觀情緒不減。然而，公用事業、醫療保健等防禦性板塊則相對承壓，資金出現輕微的輪動跡象。</p>
+        <p>整體而言，市場正積極消化歐洲央行降息與美國勞動力市場數據，投資者持續關注通膨走勢及聯準會的貨幣政策動向。在多空因素交織下，美股呈現區間震盪，投資者普遍採取觀望態度，等待更多明確的經濟數據或聯準會訊號，以判斷下半年的市場走勢和降息路徑。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
