@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-09-17</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-09-17</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>NVDA</strong> 輝達</span><span class="badge-up">+3.54%</span><br>市場持續追捧AI晶片龍頭，技術創新與未來展望支撐股價。</li>
+            <li class="stock-item"><span><strong>SMCI</strong> 美超微</span><span class="badge-up">+2.88%</span><br>受惠於AI伺服器需求強勁，分析師上調目標價帶動買氣。</li>
+            <li class="stock-item"><span><strong>ARM</strong> 安謀</span><span class="badge-up">+2.71%</span><br>新一代晶片設計預期良好，市場看好其在AI手機與PC領域的發展潛力。</li>
+            <li class="stock-item"><span><strong>PLTR</strong> 大數據分析</span><span class="badge-up">+2.45%</span><br>成功簽署多份大型政府與企業AI軟體合約，增強營收成長信心。</li>
+            <li class="stock-item"><span><strong>CRWD</strong> 雲端安全</span><span class="badge-up">+2.10%</span><br>網路安全需求日益增長，公司財報表現亮眼，指引強勁。</li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>TSLA</strong> 特斯拉</span><span class="badge-down">-2.97%</span><br>市場對其電動車在華銷售數據與未來交付量感擔憂，競爭加劇壓力顯現。</li>
+            <li class="stock-item"><span><strong>MCD</strong> 麥當勞</span><span class="badge-down">-1.85%</span><br>分析師對其最新財報中的同店銷售增長放緩表示擔憂，消費者支出謹慎。</li>
+            <li class="stock-item"><span><strong>UAL</strong> 聯合航空</span><span class="badge-down">-1.72%</span><br>油價近期上漲對航空業利潤構成壓力，加上夏季旅遊需求前景不確定。</li>
+            <li class="stock-item"><span><strong>INTC</strong> 英特爾</span><span class="badge-down">-1.55%</span><br>競爭對手在AI晶片領域持續領先，市場擔憂其在資料中心業務的轉型速度。</li>
+            <li class="stock-item"><span><strong>NFLX</strong> 網飛</span><span class="badge-down">-1.38%</span><br>訂戶增長數據不如預期，且新內容發佈計畫未能完全提振投資者信心。</li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據（如 CPI、利率政策、科技巨頭財報等）：</strong>
+        <p>最新的聯準會會議紀錄顯示，儘管通膨有緩和跡象，多數官員仍傾向於維持現行高利率政策一段時間，以確保通膨能持續且穩定地回落至2%目標。這讓市場對9月降息的預期再次降溫，部分投資者開始考量年內可能僅有一次降息甚至不降息的可能性。此外，當日發布的ISM製造業PMI數據略優於預期，顯示經濟仍具韌性，但這也可能為聯準會提供繼續鷹派的理由。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：</strong>
+        <p>在聯準會偏鷹派的論調下，市場對利率敏感的科技成長股，特別是AI相關板塊，雖然出現一些獲利了結，但整體買盤支撐力道仍強，NVIDIA等領頭羊繼續上漲。資金傾向於流向具有明確成長故事和強勁現金流的優質科技股。另一方面，對利率敏感的金融股和部分週期性消費股則承壓。大盤呈現漲跌互見的震盪格局，投資者持續消化總體經濟數據與聯準會訊號，並在個別財報利好消息中尋找短期機會。防禦性板塊如公用事業和必需消費品則表現相對穩健。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
