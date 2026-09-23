@@ -240,7 +240,7 @@ HOMEPAGE_TEMPLATE = """\
 def get_ai_content(max_retries=4, base_delay=10):
     """調用 Google GenAI API 生成美股強弱勢股與當日財經大事"""
     client = genai.Client()
-    prompt = """你是一位資深美股量化分析師與財經編輯，請用繁體中文整理最近一個美股交易日的市場焦點。
+    prompt = """你是一位資深美股量化分析師與財經編輯，請用繁體中文整理以「交易所盤後即時連網檢索」作為唯一基準的美股交易日的市場焦點。
 請直接以乾淨的 HTML 標籤結構輸出（僅需 <div> 區塊，不要包含 <html>、<head> 或 <body> 宣告，不要 Markdown 程式碼區塊標記）。
 
 請嚴格按照以下 HTML 結構生成內容：
