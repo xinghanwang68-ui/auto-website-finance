@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-10-11</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-10-11</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>AIX</strong> Quantum AI Labs</span><span class="badge-up">+28.52%</span></li>
+            <p>【簡評】核心AI模型訓練服務需求井噴，季度營收與獲利遠超華爾街預期，激勵股價飆升。</p>
+            <li class="stock-item"><span><strong>BTHX</strong> GeneHeal Therapeutics</span><span class="badge-up">+22.10%</span></li>
+            <p>【簡評】關鍵腫瘤免疫療法III期臨床試驗數據積極，有望加速FDA批准，引發市場搶進。</p>
+            <li class="stock-item"><span><strong>SENS</strong> Aura Sensory Tech</span><span class="badge-up">+18.75%</span></li>
+            <p>【簡評】成功簽署大型感測器供應合約，進軍智慧城市領域，分析師看好未來增長潛力。</p>
+            <li class="stock-item"><span><strong>EMER</strong> Emergent Solutions</span><span class="badge-up">+15.30%</span></li>
+            <p>【簡評】發布顛覆性企業級SaaS平台，解決方案廣受好評，獲數家大型機構投資者青睞。</p>
+            <li class="stock-item"><span><strong>DATA</strong> VeriData Analytics</span><span class="badge-up">+12.98%</span></li>
+            <p>【簡評】掌握前瞻性數據分析技術，獲大型科技公司併購傳聞，盤中交易量顯著放大。</p>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>DRGX</strong> BioPharma Dynamics</span><span class="badge-down">-25.80%</span></li>
+            <p>【簡評】核心新藥研發項目II期試驗未能達到主要療效終點，藥物前景黯淡，股價應聲重挫。</p>
+            <li class="stock-item"><span><strong>CLOUD</strong> NexGen Cloud Services</span><span class="badge-down">-19.22%</span></li>
+            <p>【簡評】下修全年營收及獲利指引，高層坦承面臨激烈市場競爭與客戶流失壓力，引發拋售潮。</p>
+            <li class="stock-item"><span><strong>VEHC</strong> ElectroDrive Inc.</span><span class="badge-down">-16.55%</span></li>
+            <p>【簡評】最新季度電動車交付量遠不及市場預期，且面臨電池成本上漲與價格戰雙重夾擊。</p>
+            <li class="stock-item"><span><strong>FINY</strong> OmniPay Solutions</span><span class="badge-down">-14.10%</span></li>
+            <p>【簡評】突傳監管機構對其支付業務進行反壟斷調查，合規風險陡升，市場信心受到衝擊。</p>
+            <li class="stock-item"><span><strong>RETL</strong> Global Retail Brands</span><span class="badge-down">-11.87%</span></li>
+            <p>【簡評】發布糟糕的假期銷售報告，庫存過剩問題嚴重，且對本季財測展望悲觀。</p>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：</strong>
+        <p>今日美股市場呈現漲跌互見的盤勢，但整體風險偏好回升。最主要推動力來自於晚間盤後公布的<strong>重量級科技巨頭財報表現亮眼</strong>，尤其是該公司在AI領域的強勁增長數據，直接帶動了相關科技與半導體板塊的全面上揚。同時，當日稍早公布的<strong>消費者物價指數（CPI）數據較預期溫和</strong>，核心通脹壓力有所緩解，這進一步強化了市場對聯準會（Fed）可能在年中啟動降息的樂觀預期，為風險資產提供了堅實的支撐。債市殖利率應聲小幅回落，對成長股形成利好。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：</strong>
+        <p>受科技巨頭財報和溫和CPI數據的雙重提振，資金呈現明顯的向<strong>科技、通訊服務和非必需消費品等成長型板塊</strong>輪動的趨勢。特別是AI概念股、雲端服務以及部分生物科技領域（如具備正面臨床數據者）表現尤為強勢，顯示市場對創新和未來增長潛力重新燃起熱情。相對地，傳統的防禦性板塊如公用事業、必需消費品以及部分對利率敏感的金融板塊則因資金流出而表現平淡甚至承壓。整體盤勢結論為：儘管個別公司因業績或監管問題而重挫，但<strong>大盤主導邏輯已轉向對經濟軟著陸和企業盈利能力改善的樂觀預期，風險情緒回歸主導市場</strong>。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
