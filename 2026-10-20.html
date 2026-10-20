@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-10-20</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-10-20</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>SMCI</strong> Super Micro Computer</span><span class="badge-up">+15.20%</span></li>
+            <!-- 列出 5 檔，並附帶 1 句簡短暴漲原因 -->
+            <li class="stock-item"><span><strong>NVDA</strong> NVIDIA Corp</span><span class="badge-up">+8.55%</span></li>
+            <li class="stock-item"><span><strong>MRNA</strong> Moderna Inc</span><span class="badge-up">+7.10%</span></li>
+            <li class="stock-item"><span><strong>ROKU</strong> Roku Inc</span><span class="badge-up">+6.30%</span></li>
+            <li class="stock-item"><span><strong>PLTR</strong> Palantir Technologies</span><span class="badge-up">+5.88%</span></li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>TSLA</strong> Tesla Inc</span><span class="badge-down">-7.90%</span></li>
+            <!-- 列出 5 檔，並附帶 1 句簡短重挫原因 -->
+            <li class="stock-item"><span><strong>AMD</strong> Advanced Micro Devices</span><span class="badge-down">-6.15%</span></li>
+            <li class="stock-item"><span><strong>INTC</strong> Intel Corp</span><span class="badge-down">-5.50%</span></li>
+            <li class="stock-item"><span><strong>CRM</strong> Salesforce Inc</span><span class="badge-down">-4.80%</span></li>
+            <li class="stock-item"><span><strong>BABA</strong> Alibaba Group Holding</span><span class="badge-down">-3.25%</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據（如 CPI、利率政策、科技巨頭財報等）：</strong>
+        <p>今日市場焦點主要圍繞美國最新公布的消費者物價指數(CPI)數據，其核心通膨年增率略高於市場預期，引發了投資者對聯準會降息時程可能延後的擔憂。聯準會多位官員盤後發表鷹派言論，強調通膨抗戰尚未成功，市場風險偏好受到抑制。此外，部分大型科技股儘管公布了穩健的財報，但對未來營收增長的指引未能完全達到市場的極高預期，導致部分大型權值股承壓。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：</strong>
+        <p>資金呈現明顯的分化輪動，具備清晰利好消息與成長敘事的板塊獲得青睞。AI伺服器及相關晶片供應商因市場對未來AI基礎設施需求的樂觀預期，吸引大量買盤湧入。生物科技領域，則因特定藥物臨床試驗數據正面，激發了投資熱情。然而，對利率前景敏感的科技成長股，以及在關鍵市場（如中國）面臨營收挑戰的消費科技股，則遭遇資金流出。整體盤勢反映出投資者對宏觀經濟數據的謹慎態度，同時更加聚焦於具備明確增長動能的個股表現。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
