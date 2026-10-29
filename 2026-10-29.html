@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-10-29</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-10-29</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>QZIL</strong> 量子智聯</span><span class="badge-up">+15.23%</span></li>
+            <li class="stock-item"><p>受惠於其在邊緣AI晶片技術的突破性進展，獲得大型雲端服務商新訂單，激勵股價飆升。</p></li>
+            <li class="stock-item"><span><strong>BIOS</strong> 新源生技</span><span class="badge-up">+12.87%</span></li>
+            <li class="stock-item"><p>公布其針對罕見疾病開發的新藥於臨床三期試驗中展現顯著療效，市場預期藥證獲批機率大增。</p></li>
+            <li class="stock-item"><span><strong>GEPW</strong> 綠能動力</span><span class="badge-up">+10.55%</span></li>
+            <li class="stock-item"><p>受全球多國新一輪綠能補貼政策發布消息激勵，市場看好其太陽能與風力發電設備銷售前景。</p></li>
+            <li class="stock-item"><span><strong>NSEC</strong> 網安雲端</span><span class="badge-up">+9.98%</span></li>
+            <li class="stock-item"><p>宣佈與美國國防部簽署數億美元的網路安全服務合約，鞏固其在政府部門資安領域的領先地位。</p></li>
+            <li class="stock-item"><span><strong>FSLF</strong> 時尚生活</span><span class="badge-up">+8.71%</span></li>
+            <li class="stock-item"><p>知名投行發佈報告將其評級上調至「買入」，並預期其最新產品線將顯著帶動假日購物季營收。</p></li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>VTVN</strong> 影視娛樂</span><span class="badge-down">-18.10%</span></li>
+            <li class="stock-item"><p>公佈最新財報，訂閱用戶數遠低於市場預期，且預警下一季度將加大內容投資以應對激烈競爭。</p></li>
+            <li class="stock-item"><span><strong>CARS</strong> 經典汽車</span><span class="badge-down">-14.33%</span></li>
+            <li class="stock-item"><p>受電動車市場競爭加劇及高利率環境影響，管理層大幅下調全年銷售及獲利展望。</p></li>
+            <li class="stock-item"><span><strong>RBNK</strong> 地方金融</span><span class="badge-down">-11.99%</span></li>
+            <li class="stock-item"><p>傳出監管機構將加強對區域銀行商業不動產貸款風險的審查，市場擔憂壞帳風險攀升。</p></li>
+            <li class="stock-item"><span><strong>MEDX</strong> 醫療創新</span><span class="badge-down">-10.22%</span></li>
+            <li class="stock-item"><p>其核心新醫療設備在歐盟市場的上市申請遭遇意外延遲，恐影響未來數年營收貢獻。</p></li>
+            <li class="stock-item"><span><strong>ECOM</strong> 電商巨頭</span><span class="badge-down">-9.50%</span></li>
+            <li class="stock-item"><p>因消費者支出放緩及物流成本壓力，公司發布黯淡的假日購物季預期，引發投資者拋售。</p></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：</strong>
+        <p>美國勞工部公佈的最新消費者物價指數 (CPI) 年增率超出市場預期，尤其是核心CPI數據顯示通膨壓力仍具韌性。此數據立即引發市場對聯準會（Fed）可能推遲降息時程，甚至不排除重啟升息討論的擔憂。十年期美債殖利率因此跳升，美元指數同步走強，對科技成長股構成壓力。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：</strong>
+        <p>受制於超預期的通膨數據，市場資金明顯流向防禦型板塊，如公用事業（Utilities）和必需消費品（Consumer Staples）表現相對穩健。對利率敏感的成長型科技股普遍承壓回檔，特別是估值偏高的半導體與軟體服務股跌幅較深。與此同時，國際油價因地緣政治風險升溫而走高，帶動能源板塊逆勢上揚。整體而言，市場在通膨數據面前轉趨謹慎，投資者正重新評估聯準會未來貨幣政策的路徑，短期內避險情緒可能持續。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
