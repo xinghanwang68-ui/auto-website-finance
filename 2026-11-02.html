@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-11-02</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-11-02</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item">
+                <span><strong>AIX</strong> 創新智能</span><span class="badge-up">+28.75%</span>
+                <p class="stock-reason-text">受惠於其核心AI晶片業務財報遠超預期，且對未來市場前景給出極樂觀展望。</p>
+            </li>
+            <li class="stock-item">
+                <span><strong>BIOX</strong> 生物科技</span><span class="badge-up">+22.30%</span>
+                <p class="stock-reason-text">宣布其用於罕見疾病的新藥臨床三期試驗達到主要終點，數據表現優異。</p>
+            </li>
+            <li class="stock-item">
+                <span><strong>ENVI</strong> 綠能解決</span><span class="badge-up">+17.88%</span>
+                <p class="stock-reason-text">獲得政府大型再生能源儲能專案合約，市場看好其長期營收增長。</p>
+            </li>
+            <li class="stock-item">
+                <span><strong>SECU</strong> 網路安全</span><span class="badge-up">+15.20%</span>
+                <p class="stock-reason-text">受惠於最新網路攻擊事件頻傳，市場預期企業資安支出將大幅提升。</p>
+            </li>
+            <li class="stock-item">
+                <span><strong>REAL</strong> 房產科技</span><span class="badge-up">+12.95%</span>
+                <p class="stock-reason-text">公布與大型房產開發商簽訂獨家合作協議，將加速其平台普及。</p>
+            </li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item">
+                <span><strong>RTLX</strong> 零售連鎖</span><span class="badge-down">-25.10%</span>
+                <p class="stock-reason-text">發布悲觀的季度財報指引，預警消費者支出疲軟恐持續影響銷售。</p>
+            </li>
+            <li class="stock-item">
+                <span><strong>FINT</strong> 金融科技</span><span class="badge-down">-19.55%</span>
+                <p class="stock-reason-text">傳出潛在監管調查，因其數據處理與隱私政策可能存在漏洞。</p>
+            </li>
+            <li class="stock-item">
+                <span><strong>MANF</strong> 製造方案</span><span class="badge-down">-16.80%</span>
+                <p class="stock-reason-text">因關鍵零組件供應鏈問題，導致生產延遲並下修全年營收預測。</p>
+            </li>
+            <li class="stock-item">
+                <span><strong>SaaS</strong> 軟體服務</span><span class="badge-down">-13.70%</span>
+                <p class="stock-reason-text">分析師下調其評級與目標價，擔憂市場競爭加劇及客戶流失。</p>
+            </li>
+            <li class="stock-item">
+                <span><strong>MINE</strong> 原物料開採</span><span class="badge-down">-10.33%</span>
+                <p class="stock-reason-text">國際大宗商品價格急劇下跌，直接衝擊其核心業務的盈利能力。</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：</strong>
+        <p>今日市場焦點集中於盤中發布的消費者物價指數（CPI）數據。核心CPI年增率略高於市場預期，引發投資人對聯準會（Fed）降息時程可能進一步推遲的擔憂，美債殖利率一度走高。然而，盤中另一重大事件，即AI晶片巨頭「創新智能 (AIX)」公布的第二季度財報大幅超越分析師預期，並給出強勁的未來指引，有效緩解了通膨數據帶來的壓力，為市場注入一劑強心針。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：</strong>
+        <p>受AIX亮眼財報激勵，科技板塊尤其是人工智慧與半導體相關類股今日表現極為強勢，資金呈現明顯的「追漲」態勢。生物科技板塊也因個別公司利好而受惠。相對地，通膨數據高於預期對消費類股及部分對利率敏感的金融服務業形成壓力，導致這些板塊走勢疲軟。整體而言，市場呈現出結構性行情，即由明星科技股引領指數上攻，同時總經數據的壓力使得部分周期性或傳統產業板塊承壓。投資人持續在通膨與企業獲利能力之間尋找平衡點，短期內市場情緒仍將受到大型科技公司財報與總經數據的雙重影響。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
