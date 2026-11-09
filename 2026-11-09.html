@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-11-09</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-11-09</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>SMCI</strong> Super Micro Computer</span><span class="badge-up">+18.25%</span><p>受惠AI伺服器需求持續強勁，市場預期其在AI基礎設施建置中扮演關鍵角色，營收指引獲上調。</p></li>
+            <li class="stock-item"><span><strong>MRNA</strong> Moderna Inc.</span><span class="badge-up">+12.10%</span><p>宣布其流感疫苗MRESPIA在後期臨床試驗中數據表現良好，提升市場對其產品線的信心。</p></li>
+            <li class="stock-item"><span><strong>RIVN</strong> Rivian Automotive</span><span class="badge-up">+9.88%</span><p>與一家大型物流公司簽訂新的電動貨車供應合約，顯示其商業客戶拓展取得進展。</p></li>
+            <li class="stock-item"><span><strong>ETSY</strong> Etsy Inc.</span><span class="badge-up">+8.75%</span><p>分析師上調其評級，認為電商平台在假日購物季前景樂觀，且用戶增長具韌性。</p></li>
+            <li class="stock-item"><span><strong>SQ</strong> Block Inc.</span><span class="badge-up">+7.33%</span><p>旗下Cash App服務用戶數強勁增長，且比特幣價格回暖帶動其相關業務收益預期。</p></li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>AMC</strong> AMC Entertainment</span><span class="badge-down">-15.42%</span><p>公司宣布將進行額外股權融資，稀釋現有股東權益，引發市場拋售壓力。</p></li>
+            <li class="stock-item"><span><strong>PFE</strong> Pfizer Inc.</span><span class="badge-down">-10.60%</span><p>一款關鍵的癌症藥物臨床試驗結果不如預期，市場對其未來營收增長產生擔憂。</p></li>
+            <li class="stock-item"><span><strong>ROKU</strong> Roku Inc.</span><span class="badge-down">-9.15%</span><p>競爭對手推出更具性價比的串流媒體硬體，市場擔心其市佔率將受擠壓。</p></li>
+            <li class="stock-item"><span><strong>NIO</strong> Nio Inc.</span><span class="badge-down">-8.70%</span><p>中國市場電動車競爭加劇，且宏觀經濟數據疲軟，影響投資者對其交付量的信心。</p></li>
+            <li class="stock-item"><span><strong>UPST</strong> Upstart Holdings</span><span class="badge-down">-7.99%</span><p>由於利率持續高企，其AI貸款平台的批核量與獲利能力受到質疑，分析師下調目標價。</p></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：</strong>
+        <p>今日市場焦點主要圍繞聯準會主席的最新公開談話。主席雖重申抗通膨的決心，但也表示會密切關注經濟數據，並在未來利率決策上保持彈性。此番鴿派言論的些微轉向，被市場解讀為升息週期可能已接近尾聲的訊號，推升了部分成長型股票的估值，尤其是此前受利率壓抑的科技股。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：</strong>
+        <p>受聯準會言論影響，資金明顯從防禦性板塊流向成長與科技板塊，尤其是與AI相關的半導體和雲端服務公司表現亮眼。同時，部分生物科技公司因積極的臨床試驗結果獲得青睞，顯示市場對具備創新能力的個別公司仍有高度信心。然而，部分高估值或面臨激烈競爭的電動車及傳統藥廠則承受較大賣壓，呈現明顯的板塊分化與資金精選趨勢。整體而言，市場情緒偏向樂觀，但仍存在對特定公司營運風險的謹慎。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
