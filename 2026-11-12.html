@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-11-12</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-11-12</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>NVDA</strong> 輝達</span><span class="badge-up">+8.54%</span></li>
+            <!-- 列出 5 檔，並附帶 1 句簡短暴漲原因 -->
+            <li><small>受惠於AI晶片需求持續強勁，多家分析師上調目標價。</small></li>
+            <li class="stock-item"><span><strong>SMCI</strong> 美超微電腦</span><span class="badge-up">+10.12%</span></li>
+            <li><small>AI伺服器訂單超預期，據傳獲得新大客戶長期供應合約。</small></li>
+            <li class="stock-item"><span><strong>TSLA</strong> 特斯拉</span><span class="badge-up">+6.21%</span></li>
+            <li><small>Cybertruck產能提升消息傳出，市場預期成本控制將改善。</small></li>
+            <li class="stock-item"><span><strong>COIN</strong> Coinbase</span><span class="badge-up">+9.35%</span></li>
+            <li><small>比特幣價格強勢反彈，帶動加密貨幣相關平台股全面樂觀。</small></li>
+            <li class="stock-item"><span><strong>ROKU</strong> Roku</span><span class="badge-up">+7.88%</span></li>
+            <li><small>串流媒體廣告收入成長加速，用戶增長數據表現穩健。</small></li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>PFE</strong> 輝瑞</span><span class="badge-down">-6.10%</span></li>
+            <!-- 列出 5 檔，並附帶 1 句簡短重挫原因 -->
+            <li><small>關鍵新藥臨床試驗數據未達預期，市場下調盈利前景。</small></li>
+            <li class="stock-item"><span><strong>BA</strong> 波音</span><span class="badge-down">-5.82%</span></li>
+            <li><small>生產品質問題持續受關注，多架飛機交機延誤壓力加大。</small></li>
+            <li class="stock-item"><span><strong>WMT</strong> 沃爾瑪</span><span class="badge-down">-4.55%</span></li>
+            <li><small>最新財報指引不及市場預期，消費者支出面臨逆風。</small></li>
+            <li class="stock-item"><span><strong>VZ</strong> 威瑞森</span><span class="badge-down">-3.91%</span></li>
+            <li><small>季度訂戶流失高於分析師預期，電信市場競爭加劇。</small></li>
+            <li class="stock-item"><span><strong>CAT</strong> 開拓重工</span><span class="badge-down">-3.24%</span></li>
+            <li><small>全球基建需求放緩跡象浮現，中國市場銷售壓力顯現。</small></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：美國10月CPI年增率降至3.1%，低於預期，聯準會降息預期升溫</strong>
+        <p>今日市場最受矚目的數據是美國勞工部公布的10月份消費者物價指數（CPI），年增率降至3.1%，略低於市場普遍預期的3.2%。核心CPI（排除食品與能源）年增率亦降至4.0%，符合預期。這項數據的釋出，有效緩解了市場對通膨頑固的擔憂，強化了聯準會（Fed）可能在明年上半年開始降息的預期。隨之而來的反應是公債殖利率應聲下跌，10年期美債殖利率回落至4.4%下方，風險資產受到顯著提振，特別是科技與成長型股票領漲，顯示資金重新湧入對利率敏感的板塊。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：科技與非必需消費板塊領跑大盤，市場風險偏好提升</strong>
+        <p>受惠於降息預期升溫，今日美股呈現普漲格局，主要股指全面收高。板塊方面，科技（Technology）和非必需消費品（Consumer Discretionary）板塊表現尤為突出，其中AI相關概念股、半導體公司以及大型科技股成為資金追逐的焦點。通訊服務（Communication Services）板塊也表現強勁。相反地，能源（Energy）板塊因油價小幅回落而承壓，而醫療保健（Health Care）和公用事業（Utilities）等防禦性板塊在市場風險偏好情緒高漲下，相對失色。整體而言，市場情緒偏向樂觀，投資者對經濟軟著陸和聯準會政策轉向抱持積極態度，但後續仍需密切關注聯準會官員對於通膨和利率前景的公開發言，以確認市場預期的穩定性。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
