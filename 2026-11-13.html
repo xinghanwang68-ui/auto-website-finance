@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美股市場情報 - 2026-11-13</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --up: #10b981;
+            --down: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid var(--border);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: transform 0.2s ease;
+        }
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 1.8em;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* AI 產出內容的金融卡片樣式 */
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stock-card {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        .stock-card h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stock-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+        .stock-item:last-child {
+            border-bottom: none;
+        }
+        .badge-up { color: var(--up); font-weight: bold; }
+        .badge-down { color: var(--down); font-weight: bold; }
+        .news-section {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+            margin-top: 25px;
+        }
+        .news-section h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        .news-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">⬅ 回到市場日報列表</a>
+        <h1>📈 美股市場情報：2026-11-13</h1>
+        <div class="content"><div class="market-grid">
+    <div class="stock-card">
+        <h3 style="color: #10b981;">🚀 漲幅最高 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>SMCI</strong> 美超微</span><span class="badge-up">+10.25%</span><br><small>受惠於市場對AI伺服器需求的持續高漲與超預期訂單增長。</small></li>
+            <li class="stock-item"><span><strong>MRNA</strong> 莫德納</span><span class="badge-up">+8.90%</span><br><small>傳出其新型流感疫苗在後期試驗中表現優異，激勵股價大漲。</small></li>
+            <li class="stock-item"><span><strong>UBER</strong> 優步</span><span class="badge-up">+7.63%</span><br><small>公布超預期財報，乘車與外送業務雙雙加速成長，盈利能力改善。</small></li>
+            <li class="stock-item"><span><strong>DELL</strong> 戴爾</span><span class="badge-up">+6.18%</span><br><small>儘管大盤承壓，但其AI伺服器部門表現亮眼，獲券商調升目標價。</small></li>
+            <li class="stock-item"><span><strong>NFLX</strong> 網飛</span><span class="badge-up">+5.47%</span><br><small>訂閱用戶數增速超出市場預期，廣告業務初見成效。</small></li>
+        </ul>
+    </div>
+    <div class="stock-card">
+        <h3 style="color: #ef4444;">🔻 跌幅最深 Top 5 焦點股</h3>
+        <ul class="stock-list">
+            <li class="stock-item"><span><strong>PYPL</strong> PayPal</span><span class="badge-down">-9.88%</span><br><small>財報指引不如預期，尤其對未來支付處理量的展望謹慎。</small></li>
+            <li class="stock-item"><span><strong>AMD</strong> 超微</span><span class="badge-down">-8.15%</span><br><small>市場傳言其某款新晶片生產延遲，且競爭對手新產品發布造成壓力。</small></li>
+            <li class="stock-item"><span><strong>FDX</strong> 聯邦快遞</span><span class="badge-down">-7.30%</span><br><small>受到全球貿易量下滑及勞動成本上升的雙重衝擊，下修全年財測。</small></li>
+            <li class="stock-item"><span><strong>KO</strong> 可口可樂</span><span class="badge-down">-6.55%</span><br><small>部分地區銷售數據疲軟，且受到新興市場匯率波動影響。</small></li>
+            <li class="stock-item"><span><strong>BIIB</strong> 百健</span><span class="badge-down">-5.92%</span><br><small>旗下阿茲海默症藥物臨床數據未達部分分析師高預期，引發獲利了結。</small></li>
+        </ul>
+    </div>
+</div>
+
+<div class="news-section">
+    <h3>📌 當日美股核心大事與總經觀點</h3>
+    <div class="news-item">
+        <strong>1. 重大市場事件 / 總經數據：</strong>
+        <p><strong>FOMC會議紀要揭示鴿派轉向，市場對降息預期升溫：</strong> 聯準會最新公佈的會議紀要顯示，多位委員對通膨下行趨勢持樂觀態度，並開始討論未來降息的可能性與時機，儘管多數委員仍強調數據依賴性。此一較市場預期更為鴿派的論調，立即點燃了市場對利率前景的樂觀情緒，尤其利好成長型股票。</p>
+    </div>
+    <div class="news-item">
+        <strong>2. 板塊資金輪動與盤勢結論：</strong>
+        <p>受FOMC會議紀要的鴿派訊息刺激，資金明顯湧入成長型和科技股，尤其是AI相關產業鏈。非必需消費品板塊也因降息預期對消費支出的提振作用而表現活躍。相反，防禦性板塊如公用事業和部分消費必需品則相對承壓，金融股因利差縮窄預期也表現疲軟。整體而言，市場風險偏好回升，資金從價值股轉向成長股，呈現典型的「利率敏感型」板塊輪動，投資人應持續關注後續通膨數據及聯準會官員談話。</p>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
